@@ -1,0 +1,160 @@
+<!doctype html>
+
+<html>
+
+	<head>
+
+		<link rel="stylesheet" href="C:\Users\J' Bebooxh'\Desktop\css\bootstrap.min.css">
+
+		
+
+		<script type="text/javascript">
+		
+	    	function toFahrenheit() {
+
+				var celcius = document.getElementById('numcelc').value;
+			
+				celcius = (celcius*1.8) + 32;
+				
+	    		document.getElementById("resultcelc").innerHTML = "Fahrenheit: " + celcius;
+	    	}
+
+	    	function toCelsius() {
+
+				var fahrenheit = document.getElementById('numFahr').value;
+				
+				fahrenheit = (5/9) * (fahrenheit-32);
+
+				document.getElementById("resultfahr").innerHTML = "Celsius: " + fahrenheit;
+	    	}
+
+	    	function toKelvins() {
+
+				var Kelvins = document.getElementById('numkelv').value;
+			
+				Kelvins = (Kelvins*1) + 273.15;
+
+				document.getElementById("resultkelv").innerHTML = "Kelvins: " + Kelvins;
+	    	}
+
+	    	function toCups() {
+
+				var Cups = document.getElementById('numcups').value;
+				
+				Cups = (Cups*1)/8;
+
+	    		document.getElementById("resultcups").innerHTML = "Cups: " + Cups;
+	    	}
+
+	    	function toOunces() {
+
+				var Ounces = document.getElementById('numounces').value;
+				
+				Ounces = (Ounces*1)*8;
+
+	    		document.getElementById("resultounces").innerHTML = "Ounces: " + Ounces;
+	    	}
+
+	    	function toTablespoons() {
+
+				var Tablespoons = document.getElementById('numtablespoons').value;
+
+				Tablespoons = (Tablespoons*1)*2;
+
+	    		document.getElementById("resulttablespoons").innerHTML = "Tablespoons: " + Tablespoons;
+	    	}
+
+	    	function toTeaspoons() {
+
+				var Teaspoons = document.getElementById('numteaspoons').value;
+
+				Teaspoons = (Teaspoons*1)*6;
+
+	    		document.getElementById("resultteaspoons").innerHTML = "Teaspoons: " + Teaspoons;
+	    	}
+
+	    	function toQCups() {
+
+				var QCups = document.getElementById('numQCups').value;
+
+				QCups = (QCups*1)*4;
+
+	    		document.getElementById("resultQCups").innerHTML = "Cups: " + QCups;
+	    	}
+
+    	</script>
+
+	</head>
+
+	<body background="http://content.seamless.com/SwDesign/img/background/Seamless-Food-Delivery_stepOne_Burrito_13.jpg">
+""
+			<div class="header" style="text-align:center;">
+
+				<h1 style="color: white;">Basic Cooking Measurements Conversions</h1>
+
+			</div>
+
+
+			<table width="100%">
+				<tbody>
+					<tr>
+						<td  valign="top" align="right" style="width:50%; padding-right:2%;">
+							<h2 style="color: white;">Temperature </h2>
+
+							<h3 style="color: white;">Celcius to Farenheit:</h3>
+							<input type="text" name="celcius" id="numcelc">
+							<button type="button" class="btn btn-primary" onclick="toFahrenheit()">Convert</button>
+							<p style="color: white;" id="resultcelc">Fahrenheit: </p>
+
+							<h3 style="color: white;">Farenheit to Celcius:</h3>
+							<input type="text" name="fahrenheit" id="numFahr">
+							<button type="button" class="btn btn-primary" onclick="toCelsius()">Convert</button>
+							<p style="color: white;" id="resultfahr">Celsius: </p>
+
+							<h3 style="color: white;">Celcius to Kelvins:</h3>
+							<input type="text" name="Kelvins" id="numkelv">
+							<button type="button" class="btn btn-primary" onclick="toKelvins()">Convert</button>
+							<p style="color: white;" id="resultkelv">Kelvins: </p>
+						</td>
+
+						<td valign="top" align="left" style="width:50%; padding-left:3%;">
+							<h2 style="color: white;">Volume</h2>
+
+							<h3 style="color: white;">Ounces to Cups:</h3>
+							<input type="text" name="Cups" id="numcups">
+							<button type="button" class="btn btn-primary" onclick="toCups()">Convert</button>
+							<p style="color: white;" id="resultcups">Cups: </p>
+
+							<h3 style="color: white;">Cups to Ounces:</h3>
+							<input type="text" name="Ounces" id="numounces">
+							<button type="button" class="btn btn-primary" onclick="toOunces()">Convert</button>
+							<p style="color: white;" id="resultounces">Ounces: </p>
+
+							<h3 style="color: white;">Ounces to Tablespoons:</h3>
+							<input type="text" name="Tablespoons" id="numtablespoons">
+							<button type="button" class="btn btn-primary" onclick="toTablespoons()">Convert</button>
+							<p style="color: white;" id="resulttablespoons">Tablespoons: </p>
+
+							<h3 style="color: white;">Ounces to Teaspoons:</h3>
+							<input type="text" name="Teaspoons" id="numteaspoons">
+							<button type="button" class="btn btn-primary" onclick="toTeaspoons()">Convert</button>
+							<p style="color: white;" id="resultteaspoons">Teaspoons: </p>
+
+							<h3 style="color: white;">Quarters to Cups:</h3>
+							<input type="text" name="QCups" id="numQCups">
+							<button type="button" class="btn btn-primary" onclick="toQCups()">Convert</button>
+							<p style="color: white;" id="resultQCups">Cups: </p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			
+
+		
+		<h3 style="color: white;">*Do not enter fractions. Instead, enter the decimal value of the fraction. Developed By IJM and FRM, HACKPR, UPRM.</h3>
+
+	</body>
+
+</html>
